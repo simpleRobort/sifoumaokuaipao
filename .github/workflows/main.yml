@@ -10,6 +10,11 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
+         - name: nvm check 🛎️
+        run: |
+          node -V
+          nvm
+
       - name: Install and Build 🔧
         run: |
           npm ci
