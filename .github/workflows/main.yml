@@ -12,7 +12,7 @@ jobs:
 
       - name: Nvm Check 🛎️
         run: |
-          node -V
+          node -v
           nvm
 
       - name: Install and Build 🔧
