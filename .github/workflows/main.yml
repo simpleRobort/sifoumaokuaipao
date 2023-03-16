@@ -6,13 +6,15 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    # 设置 node 版本
+    strategy:
+      matrix:
+        node-version: [14]
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-
-      - name: Nvm Check 🛎️
-        run: |
-          export NODE_OPTIONS=--openssl-legacy-provider
 
       - name: Install and Build 🔧
         run: |
