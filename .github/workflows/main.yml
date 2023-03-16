@@ -10,7 +10,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-         - name: nvm check 🛎️
+      - name: Nvm Check 🛎️
         run: |
           node -V
           nvm
