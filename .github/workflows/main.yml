@@ -10,7 +10,7 @@ jobs:
     # 设置 node 版本
     strategy:
       matrix:
-        node-version: [14]
+        node-version: [14.x]
 
     steps:
       - name: Checkout 🛎️
