@@ -12,8 +12,7 @@ jobs:
 
       - name: Nvm Check 🛎️
         run: |
-          node -v
-          nvm
+          export NODE_OPTIONS=--openssl-legacy-provider
 
       - name: Install and Build 🔧
         run: |
